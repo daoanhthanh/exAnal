@@ -1,10 +1,10 @@
-mod args;
+pub(crate) mod args;
 mod domain;
-use domain::process;
 use args::Args;
 use clap::Parser;
+use domain::process;
 
 fn main() {
     let args = Args::parse();
-    print!("Hello {}!", args.name)
+    process(args);
 }

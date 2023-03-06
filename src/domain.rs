@@ -1,5 +1,8 @@
-mod args;
-use args::Args;
+use crate::args::Args;
+use std::collections::HashMap;
+use std::fs;
 pub fn process(args: Args) {
-    print!("Hello {}!", args.name)
+    let walker = fs::read_dir(args.path).unwrap();
+    let mut counts: HashMap<_, _> = HashMap::new();
+    let mut total_files = 0;
 }

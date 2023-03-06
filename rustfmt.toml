@@ -1,0 +1,7 @@
+# rustfmt.toml
+
+# Use 4 spaces for indentation
+tab_spaces = 4
+
+# Maximum line length of 100 characters
+max_width = 100
